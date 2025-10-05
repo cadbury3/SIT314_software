@@ -1,0 +1,19 @@
+{
+  "name": "forest-fire-monitoring",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "broker": "node mqtt-broker.js",
+    "sensors": "node sensors/temperature-sensor.js & node sensors/smoke-sensor.js & node sensors/humidity-sensor.js & node sensors/wind-sensor.js",
+    "alerts": "node alert-service.js",
+    "start": "npm-run-all -p broker alerts sensors"
+  },
+  "dependencies": {
+    "aedes": "^0.51.3",
+    "mqtt": "^5.14.1"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
