@@ -1,0 +1,32 @@
+{
+  "name": "smart-seminar-room",
+  "version": "1.0.0",
+  "description": "Credit Task: Smart seminar room air-conditioning prototype (Edge + HVAC + Sensors)",
+  "main": "edge_node.js",
+  "type": "module",
+  "scripts": {
+    "start:edge": "node edge_node.js",
+    "start:hvac": "node hvac_node.js",
+    "start:sensors": "node sensors/simulator.js",
+    "dev:edge": "node --watch edge_node.js",
+    "dev:hvac": "node --watch hvac_node.js"
+  },
+  "keywords": [
+    "express",
+    "mongodb",
+    "iot",
+    "hvac"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.6.0",
+    "morgan": "^1.10.0"
+  }
+}
+
+
