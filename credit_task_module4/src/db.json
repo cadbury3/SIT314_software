@@ -1,0 +1,11 @@
+{
+  "readings": [
+    {
+      "temperature": 30.1,
+      "location": "Test",
+      "timestamp": "2025-10-05T15:16:18.898Z",
+      "id": 1
+    }
+  ],
+  "lastId": 2
+}
